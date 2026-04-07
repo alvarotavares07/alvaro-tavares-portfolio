@@ -48,24 +48,24 @@ export default function AboutSection() {
   const ref2 = useReveal();
   const pillars = lang === "pt"
     ? [
-        { icon: "🤖", title: "Automação & RPA", desc: "Fluxos S-Works, UiPath, n8n e scripts C# do zero ao robô em produção" },
-        { icon: "🧩", title: "SaaS & Implantação", desc: "Implantação, configuração e sustentação de sistemas SaaS com treinamento de usuários" },
-        { icon: "🔗", title: "APIs & Integração", desc: "Contratos Swagger, Postman, webhooks e integração entre sistemas legados e digitais" },
-        { icon: "📐", title: "Análise & Produto", desc: "Requisitos, user stories, BPMN, protótipos e gestão de backlog como BA ou PO" },
+        { icon: "📐", title: "Negócio & Sistemas", desc: "Requisitos, regras, fluxos e alinhamento entre áreas para decisões mais claras" },
+        { icon: "🔗", title: "APIs & Integração", desc: "REST, Swagger, webhooks e conexão entre sistemas legados, parceiros e plataformas bancárias" },
+        { icon: "🏦", title: "Banking & Produção", desc: "Atuação em ambientes críticos com homologação, monitoramento e estabilidade operacional" },
+        { icon: "⚙️", title: "Entrega Ponta a Ponta", desc: "Da definição ao go-live com visão funcional, técnica e acompanhamento pós-implantação" },
       ]
     : [
-        { icon: "🤖", title: "Automation & RPA", desc: "S-Works, UiPath, n8n flows and C# scripts from mapping to bots running in production" },
-        { icon: "🧩", title: "SaaS & Implementation", desc: "Implementation, configuration, and operational support for SaaS systems with user enablement" },
-        { icon: "🔗", title: "APIs & Integration", desc: "Swagger contracts, Postman, webhooks, and integration between legacy and digital systems" },
-        { icon: "📐", title: "Analysis & Product", desc: "Requirements, user stories, BPMN, prototypes, and backlog management as BA or PO" },
+        { icon: "📐", title: "Business & Systems", desc: "Requirements, business rules, flow definition, and alignment across teams" },
+        { icon: "🔗", title: "APIs & Integration", desc: "REST, Swagger, webhooks, and integration across legacy, partner, and banking platforms" },
+        { icon: "🏦", title: "Banking & Production", desc: "Work in critical environments with homologation, monitoring, and operational stability" },
+        { icon: "⚙️", title: "End-to-End Delivery", desc: "From definition to go-live with functional, technical, and post-release ownership" },
       ];
   const badges = lang === "pt"
-    ? ["RPA · Automação", "SaaS · Implantação", "APIs · Integração", "BA · PO · Análise"]
-    : ["RPA · Automation", "SaaS · Implementation", "APIs · Integration", "BA · PO · Analysis"];
+    ? ["Requisitos & Regras", "APIs & Integração", "Banking & Produção", "Entrega ponta a ponta"]
+    : ["Requirements & Rules", "APIs & Integration", "Banking & Production", "End-to-end delivery"];
   const clientsTitle = lang === "pt" ? "Clientes & Empresas" : "Clients & Companies";
   const heading = lang === "pt"
-    ? <>Do requisito<br />ao sistema<br /><span className="gradient-text-electric">em produção.</span></>
-    : <>From requirements<br />to systems<br /><span className="gradient-text-electric">in production.</span></>;
+    ? <>Da regra de negócio<br />à integração<br /><span className="gradient-text-electric">em produção.</span></>
+    : <>From business rules<br />to integration<br /><span className="gradient-text-electric">in production.</span></>;
 
   return (
     <section id="about" className="py-28 relative overflow-hidden">

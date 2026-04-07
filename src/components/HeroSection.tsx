@@ -6,17 +6,17 @@ import { getAssetPath } from "@/lib/site";
 const PROFILE_IMAGE_PATH = getAssetPath("1743375229445.jpeg");
 
 const roles = [
-  "Analista de Sistemas",
-  "Business Analyst",
-  "Automação & RPA",
-  "SaaS · Integração · Implantação",
+  "Business & Systems Analyst",
+  "Integração de Sistemas & APIs",
+  "Soluções críticas em produção",
+  "Banking · Negócio + Tecnologia",
 ];
 
 const rolesEN = [
-  "Systems Analyst",
-  "Business Analyst",
-  "Automation & RPA",
-  "SaaS · Integration · Implementation",
+  "Business & Systems Analyst",
+  "Systems Integration & APIs",
+  "Critical systems in production",
+  "Banking · Business + Technology",
 ];
 
 export default function HeroSection() {
@@ -25,9 +25,9 @@ export default function HeroSection() {
   const [displayText, setDisplayText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const locationLabel = lang === "pt" ? "Belo Horizonte, MG — Brasil" : "Belo Horizonte, MG — Brazil";
-  const profileBadgeLabel = lang === "pt" ? "Negócio + Tech" : "Business + Tech";
-  const profileRoleLabel = lang === "pt" ? "BA · RPA · SaaS" : "BA · RPA · SaaS";
-  const profileExperienceLabel = lang === "pt" ? "6+ anos em sistemas" : "6+ years in systems";
+  const profileBadgeLabel = lang === "pt" ? "Negócio + Tecnologia" : "Business + Technology";
+  const profileRoleLabel = lang === "pt" ? "Integração · APIs · Banking" : "Integration · APIs · Banking";
+  const profileExperienceLabel = lang === "pt" ? "6+ anos em ambientes críticos" : "6+ years in critical environments";
 
   const currentRoles = lang === "pt" ? roles : rolesEN;
 

@@ -5,51 +5,51 @@ import { certifications, certificationCount, type CertificationCategory } from "
 
 const skillGroups = [
   {
-    key: "skills.automation",
-    icon: "⚡",
+    key: "skills.business",
+    icon: "📐",
     color: "#4fffb0",
     skills: [
-      { name: "RPA · S-Works (Evertec)", level: 95 },
-      { name: "C# · Regex · OCR (Atomics)", level: 88 },
-      { name: "n8n · UiPath · Automation Anywhere", level: 80 },
-      { name: "Devin AI · GitHub Copilot", level: 80 },
-      { name: "Monitoração · Logs · Homologação", level: 90 },
+      { name: "Levantamento de requisitos", level: 96 },
+      { name: "Regras de negócio · Fluxos", level: 95 },
+      { name: "User stories · BDD/Gherkin", level: 92 },
+      { name: "Backlog · Priorização", level: 88 },
+      { name: "Homologação com stakeholders", level: 94 },
     ],
   },
   {
-    key: "skills.saas",
-    icon: "🧩",
+    key: "skills.integration",
+    icon: "🔗",
     color: "#f5c842",
     skills: [
-      { name: "Implantação de Sistemas / SaaS", level: 92 },
-      { name: "ERP · Customização · Configuração", level: 85 },
-      { name: "Treinamento de Usuários", level: 90 },
-      { name: "Gestão de Mudança / Change Mgmt", level: 85 },
-      { name: "Sustentação & Suporte Pós-Go-Live", level: 88 },
+      { name: "APIs REST · Swagger · Postman", level: 95 },
+      { name: "Integração entre sistemas", level: 93 },
+      { name: "Webhooks · JSON · Contratos", level: 88 },
+      { name: "Open Finance · Banking flows", level: 84 },
+      { name: "Análise de impacto · Breaking changes", level: 90 },
     ],
   },
   {
-    key: "skills.api",
-    icon: "🔗",
+    key: "skills.systems",
+    icon: "⚙️",
     color: "#38bdf8",
     skills: [
-      { name: "APIs REST · Swagger · Postman", level: 95 },
-      { name: "Webhooks · Integração de Sistemas", level: 90 },
-      { name: "Redis · Java · JSON", level: 75 },
-      { name: "Open Finance · Sistemas Legados", level: 82 },
-      { name: "Análise de Impacto · Breaking Changes", level: 85 },
+      { name: "Entrega ponta a ponta", level: 94 },
+      { name: "Implantação · Go-live · Sustentação", level: 92 },
+      { name: "Monitoramento · Logs · Produção", level: 90 },
+      { name: "S-Works · C# · Regex · OCR", level: 86 },
+      { name: "Automação como apoio operacional", level: 78 },
     ],
   },
   {
-    key: "skills.analysis",
-    icon: "📐",
+    key: "skills.data",
+    icon: "🛠️",
     color: "#a78bfa",
     skills: [
-      { name: "Business Analysis · Requisitos", level: 96 },
-      { name: "User Stories · BDD/Gherkin", level: 95 },
-      { name: "BPMN · Bizagi · Figma", level: 88 },
-      { name: "Product Owner · Backlog · Story Map", level: 88 },
-      { name: "Scrum · SAFe · Kanban · Jira", level: 90 },
+      { name: "SQL · Redis · Java", level: 78 },
+      { name: "Jira · Figma · BPMN/Bizagi", level: 88 },
+      { name: "GitHub · Commits · Merges", level: 84 },
+      { name: "QA funcional · Testes integrados", level: 89 },
+      { name: "Devin AI · GitHub Copilot", level: 80 },
     ],
   },
 ];
@@ -159,8 +159,8 @@ export default function SkillsSection() {
               </div>
               <p className="text-silver-400 text-sm font-body max-w-3xl">
                 {lang === "pt"
-                  ? `${certificationCount} certificados e badges mapeados a partir do seu LinkedIn, organizados por trilhas que reforçam seu posicionamento em automação, BA/PO, cloud, qualidade e gestão.`
-                  : `${certificationCount} certificates and badges mapped from your LinkedIn, organized into tracks that reinforce your positioning in automation, BA/PO, cloud, quality, and management.`}
+                  ? `${certificationCount} certificados e badges organizados por trilhas que reforçam seu repertório em análise, sistemas, integração, qualidade e gestão.`
+                  : `${certificationCount} certificates and badges organized into tracks that reinforce your background in analysis, systems, integration, quality, and management.`}
               </p>
             </div>
             <div className="px-4 py-3 rounded-2xl bg-gold-400/10 border border-gold-400/20 min-w-[140px]">

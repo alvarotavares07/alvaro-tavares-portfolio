@@ -4,50 +4,50 @@ import { ExternalLink } from "lucide-react";
 
 const experiencePT = [
   {
-    role: "Analista de Sistemas",
+    role: "Analista de Sistemas | Integração & Banking",
     company: "Evertec",
     period: "out/2024 – Atual",
     current: true,
     clients: ["Santander", "Bradesco", "BB Americas"],
-    stack: ["S-Works", "C#", "Regex", "Swagger", "APIs REST", "Atomics/OCR", "Devin AI", "GitHub Copilot", "Java", "Jira", "Figma"],
+    stack: ["S-Works", "APIs REST", "Swagger", "C#", "Regex", "OCR/Atomics", "Java", "Redis", "GitHub", "Jira"],
     highlights: [
-      "Ponto de entrada das demandas: levanto requisitos funcionais e não funcionais, documento os fluxos e monto protótipos validados com o negócio antes de qualquer desenvolvimento.",
-      "Entrego automações completas no S-Works — mapeio a regra de negócio, implanto lógica em C# e Regex, integro via APIs REST e publico em produção após homologação com o cliente.",
-      "Integro módulo Atomics ao S-Works para processamento OCR: mapeamento de campos, regras de validação e tratamento de erros em documentos fora do padrão.",
-      "Monitoro execuções em produção, analiso logs, identifico falhas e corrijo fluxos — reduzindo tempo de indisponibilidade nas operações bancárias.",
-      "Participo da migração do app Redis no Santander com Devin AI e GitHub Copilot em Java: mapeio breaking changes, analiso impactos e garanto cobertura de testes.",
+      "Atuo como ponto de conexão entre negócio, operação e tecnologia: levanto requisitos funcionais e não funcionais, documento fluxos críticos e valido cenários antes do desenvolvimento.",
+      "Desenho e entrego soluções end-to-end para operações bancárias, conectando regras de negócio, APIs REST, lógica sistêmica e publicação em produção após homologação.",
+      "Integrei o módulo Atomics ao S-Works para processamento OCR, definindo mapeamento de campos, regras de validação e tratamento de exceções para documentos fora do padrão.",
+      "Acompanho produção de perto: monitoro execuções, analiso logs, identifico falhas e ajusto fluxos para reduzir indisponibilidade e ruído operacional.",
+      "Assumi a frente da evolução do app Redis no Santander em Java: atualizei dependências, tratei vulnerabilidades, analisei breaking changes, conduzi commits e merges no GitHub e acompanhei a subida segura para produção.",
     ],
-    result: "Automações de crédito consignado end-to-end, substituindo operação manual em múltiplos sistemas. Ciclos de homologação encurtados com protótipos validados antecipadamente.",
+    result: "Nos fluxos de crédito consignado, contribuí para elevar a taxa de aprovação de cerca de 20% para 70%, integrando múltiplas plataformas com mais previsibilidade e menos falhas operacionais.",
   },
   {
-    role: "Product Owner",
+    role: "Product Owner | Produtos Financeiros",
     company: "Squadra Digital",
     period: "jan/2024 – ago/2024",
     current: false,
     clients: ["Banco Inter"],
     stack: ["Jira", "Figma", "Scrum", "BDD/Gherkin", "Story Mapping"],
     highlights: [
-      "Gerenciei backlog do produto Merchant Services do início ao fim, priorizando features por valor de negócio e esforço técnico.",
-      "Escrevi user stories e critérios de aceitação em BDD/Gherkin, reduzindo idas e vindas entre negócio e dev.",
-      "Desenvolvi wireframes e protótipos no Figma para validar fluxos financeiros antes de qualquer tarefa de dev.",
-      "No projeto Global Bank com o Banco Inter, mapeei jornadas de usuário para open finance e merchant.",
+      "Gerenciei backlog de Merchant Services com foco em valor de negócio, viabilidade técnica e alinhamento entre stakeholders e time de desenvolvimento.",
+      "Escrevi user stories e critérios de aceitação em BDD/Gherkin, reduzindo retrabalho e melhorando a qualidade da passagem entre negócio, produto e engenharia.",
+      "Desenvolvi wireframes e protótipos no Figma para validar fluxos financeiros antes da implementação.",
+      "No projeto Global Bank para o Banco Inter, mapeei jornadas de open finance e merchant, conectando necessidades do negócio à execução do produto.",
     ],
-    result: "15% de aumento no CSAT após entrega das melhorias no Merchant Services.",
+    result: "Melhorias entregues no Merchant Services geraram aumento de 15% no CSAT e trouxeram mais clareza para priorização e execução.",
   },
   {
-    role: "Analista de Negócios",
+    role: "Analista de Negócios & Sistemas",
     company: "Sinqia S.A.",
     period: "jun/2023 – jan/2024",
     current: false,
     clients: ["Banco Inter", "Embracon"],
-    stack: ["RPA", "Implantação SaaS", "APIs", "SQL", "Jira", "QA"],
+    stack: ["APIs", "SQL", "Jira", "QA", "Implantação SaaS", "Homologação"],
     highlights: [
-      "Implantação e sustentação de produtos digitais financeiros no Banco Inter e na Embracon — levantamento de requisitos, especificações e acompanhamento das entregas.",
-      "Implementei automações RPA para otimizar operações de back office, eliminando trabalho manual repetitivo da equipe.",
-      "Executei testes funcionais, documentei cenários e conduzi homologação ciclo completo até aprovação formal.",
-      "Ponte entre negócio e tecnologia em reuniões com stakeholders, removendo impedimentos que travavam o desenvolvimento.",
+      "Atuei na implantação e sustentação de produtos financeiros digitais no Banco Inter e na Embracon, do levantamento de requisitos ao acompanhamento das entregas.",
+      "Documentei cenários funcionais, executei testes, conduzi homologação e acompanhei correções até a aprovação formal das áreas envolvidas.",
+      "Fiz a ponte entre negócio e tecnologia em discussões de prioridade, escopo e comportamento sistêmico, reduzindo ruídos na execução.",
+      "Usei automação quando fazia sentido para suportar a operação, sem perder o foco principal em integração, estabilidade e entrega.",
     ],
-    result: "Redução de 20% no tempo médio de resolução de problemas com ciclos de testes reestruturados.",
+    result: "Ciclos de testes e homologação mais organizados reduziram em 20% o tempo médio de resolução de problemas e diminuíram incidentes operacionais.",
   },
   {
     role: "Analista de Negócios",
@@ -55,14 +55,14 @@ const experiencePT = [
     period: "ago/2021 – jun/2023",
     current: false,
     clients: ["Setor financeiro & administrativo"],
-    stack: ["BPMN/Bizagi", "ERP · SaaS", "Requisitos", "QA", "Treinamento"],
+    stack: ["BPMN/Bizagi", "ERP", "Requisitos", "QA", "Treinamento", "Implantação"],
     highlights: [
-      "Implantação e customização de ERP para clientes do setor financeiro e administrativo — mapeamento de processos em BPMN/Bizagi, especificação funcional e acompanhamento do desenvolvimento.",
-      "Gerenciei backlog das demandas, executei testes unitários e integrados, e conduzi homologação do levantamento à entrega.",
-      "Treinamento de usuários finais nas novas funcionalidades, reduzindo a curva de adoção e o volume de chamados pós-implantação.",
-      "Atuei em múltiplos clientes simultâneos, alternando contextos sem perda de qualidade ou prazo.",
+      "Conduzi implantação e customização de ERP para clientes dos setores financeiro e administrativo, com mapeamento de processos, especificação funcional e acompanhamento do desenvolvimento.",
+      "Gerenciei backlog, executei testes unitários e integrados e conduzi homologação do levantamento à entrega.",
+      "Treinei usuários finais nas novas funcionalidades, acelerando adoção e reduzindo dúvidas no pós-implantação.",
+      "Atuei em múltiplos clientes simultaneamente, mantendo contexto, qualidade e prazo em projetos paralelos.",
     ],
-    result: "Múltiplos projetos simultâneos com clientes distintos sem perda de qualidade.",
+    result: "Mantive múltiplos projetos em paralelo sem perda de qualidade, com entregas mais estáveis e menor fricção na adoção pelos usuários.",
   },
   {
     role: "Analista de Negócios",
@@ -72,32 +72,32 @@ const experiencePT = [
     clients: [],
     stack: ["ERP", "Implantação", "Análise de Requisitos", "Backlog", "QA"],
     highlights: [
-      "Implantação de ERP em clientes de diferentes segmentos: levantamento de requisitos, mapeamento de processos, customização do sistema e treinamento dos usuários.",
-      "Testes unitários e integrados, homologação e apresentação das soluções diretamente ao cliente — contato direto do início ao fim.",
+      "Participei de implantações de ERP em diferentes segmentos, com levantamento de requisitos, mapeamento de processos, customização do sistema e treinamento dos usuários.",
+      "Executei testes unitários e integrados, conduzi homologação e apresentei soluções diretamente ao cliente do início ao fim do projeto.",
     ],
-    result: "Contato direto com o cliente do início ao fim de cada projeto.",
+    result: "Construí base sólida em análise, implantação e relacionamento com cliente, assumindo responsabilidade pela entrega ponta a ponta.",
   },
 ];
 
 const experienceEN = [
   {
-    role: "Systems Analyst",
+    role: "Systems Analyst | Integration & Banking",
     company: "Evertec",
     period: "Oct/2024 – Present",
     current: true,
     clients: ["Santander", "Bradesco", "BB Americas"],
-    stack: ["S-Works", "C#", "Regex", "Swagger", "REST APIs", "Atomics/OCR", "Devin AI", "GitHub Copilot", "Java", "Jira", "Figma"],
+    stack: ["S-Works", "REST APIs", "Swagger", "C#", "Regex", "OCR/Atomics", "Java", "Redis", "GitHub", "Jira"],
     highlights: [
-      "Entry point for all demands: gather functional and non-functional requirements, document flows and build prototypes validated with the business before any development starts.",
-      "Deliver complete automations in S-Works — map business rules, implement C# and Regex logic, integrate via REST APIs and publish to production after client homologation.",
-      "Integrate Atomics module with S-Works for document OCR: field mapping, validation rules and error handling for non-standard documents.",
-      "Monitor production executions, analyze logs, identify failures and fix flows — reducing downtime in banking operations.",
-      "Participate in Redis app migration at Santander with Devin AI and GitHub Copilot in Java: map breaking changes, analyze impacts and ensure test coverage.",
+      "Act as the bridge between business, operations, and technology: gather functional and non-functional requirements, document critical flows, and validate scenarios before development starts.",
+      "Design and deliver end-to-end solutions for banking operations, connecting business rules, REST APIs, system logic, and production releases after homologation.",
+      "Integrated the Atomics module into S-Works for OCR processing, defining field mapping, validation rules, and exception handling for non-standard documents.",
+      "Stay close to production by monitoring executions, analyzing logs, identifying failures, and adjusting flows to reduce downtime and operational noise.",
+      "Owned the Redis app evolution at Santander in Java: updated dependencies, fixed vulnerabilities, handled breaking changes, drove commits and merges in GitHub, and followed the production deployment through safely.",
     ],
-    result: "End-to-end consignado credit automations, replacing manual operations across multiple systems. Shorter homologation cycles with early-validated prototypes.",
+    result: "In payroll-deducted loan flows, helped increase approval rates from around 20% to 70% by integrating multiple platforms with more predictability and fewer operational issues.",
   },
   {
-    role: "Product Owner",
+    role: "Product Owner | Financial Products",
     company: "Squadra Digital",
     period: "Jan/2024 – Aug/2024",
     current: false,
@@ -108,20 +108,22 @@ const experienceEN = [
       "Wrote user stories and acceptance criteria in BDD/Gherkin, reducing back-and-forth between business and dev teams.",
       "Built wireframes and prototypes in Figma to validate financial flows before opening any dev task.",
     ],
-    result: "15% increase in CSAT after Merchant Services improvements delivery.",
+    result: "Merchant Services improvements drove a 15% increase in CSAT and created clearer alignment between prioritization and execution.",
   },
   {
-    role: "Business Analyst",
+    role: "Business Analyst & Systems",
     company: "Sinqia S.A.",
     period: "Jun/2023 – Jan/2024",
     current: false,
     clients: ["Banco Inter", "Embracon"],
-    stack: ["RPA", "APIs", "SQL", "Jira", "QA"],
+    stack: ["APIs", "SQL", "Jira", "QA", "SaaS Implementation", "Homologation"],
     highlights: [
-      "Implementation and support of digital financial products at Banco Inter and Embracon.",
-      "Implemented RPA automations to optimize back office, eliminating unnecessary manual operations.",
+      "Worked on implementation and support of digital financial products at Banco Inter and Embracon, from requirements gathering to delivery follow-up.",
+      "Documented functional scenarios, ran tests, led homologation, and tracked fixes until formal approval.",
+      "Bridged business and technology conversations around scope, priorities, and system behavior, reducing execution friction.",
+      "Used automation when helpful to support operations, while keeping the main focus on integration, stability, and delivery.",
     ],
-    result: "20% reduction in average problem resolution time with restructured testing cycles.",
+    result: "Better test and homologation cycles reduced average issue resolution time by 20% and lowered operational incidents.",
   },
   {
     role: "Business Analyst",
@@ -129,12 +131,13 @@ const experienceEN = [
     period: "Aug/2021 – Jun/2023",
     current: false,
     clients: ["Financial sector"],
-    stack: ["BPMN/Bizagi", "ERP", "Requirements", "QA"],
+    stack: ["BPMN/Bizagi", "ERP", "Requirements", "QA", "Training", "Implementation"],
     highlights: [
-      "Mapped and documented business processes in BPMN/Bizagi for financial clients.",
-      "Managed backlog, tracked development, ran tests and conducted homologation cycles.",
+      "Led ERP implementation and customization for financial and administrative clients, covering process mapping, functional specification, and delivery follow-up.",
+      "Managed backlog, tracked development, ran tests, and conducted homologation from discovery to release.",
+      "Trained end users on new features, improving adoption and reducing post-go-live questions.",
     ],
-    result: "Multiple simultaneous client projects without quality loss.",
+    result: "Handled multiple parallel projects without quality loss, improving delivery stability and user adoption.",
   },
   {
     role: "Business Analyst",
@@ -144,14 +147,17 @@ const experienceEN = [
     clients: [],
     stack: ["ERP", "Requirements Analysis", "Backlog", "QA"],
     highlights: [
-      "Gathered requirements, mapped processes, customized ERP across implementation projects for diverse clients.",
+      "Supported ERP implementations across different industries, covering requirements gathering, process mapping, system customization, and user enablement.",
+      "Ran unit and integration tests, led homologation, and presented solutions directly to clients from start to finish.",
     ],
-    result: "Direct client contact from project start to finish.",
+    result: "Built a strong foundation in analysis, implementation, and client-facing delivery with end-to-end ownership.",
   },
 ];
 
 function ExpCard({ exp, index }: { exp: typeof experiencePT[0]; index: number }) {
   const ref = useReveal();
+  const { lang, t } = useLang();
+  const impactLabel = lang === "pt" ? "Impacto" : "Impact";
 
   return (
     <div ref={ref} className="reveal relative flex gap-6 md:gap-10">
@@ -179,7 +185,7 @@ function ExpCard({ exp, index }: { exp: typeof experiencePT[0]; index: number })
           <div className="flex items-center gap-2">
             {exp.current && (
               <span className="px-3 py-1 rounded-full bg-electric-400/15 border border-electric-400/30 text-electric-400 text-xs font-mono">
-                Atual
+                {t("exp.current")}
               </span>
             )}
             <span className="text-silver-600 font-mono text-sm">{exp.period}</span>
@@ -204,7 +210,7 @@ function ExpCard({ exp, index }: { exp: typeof experiencePT[0]; index: number })
 
         {/* Result */}
         <div className="border-t border-white/5 pt-4">
-          <span className="text-electric-400 text-xs font-mono uppercase tracking-wider mr-2">▶ Resultado:</span>
+          <span className="text-electric-400 text-xs font-mono uppercase tracking-wider mr-2">▶ {impactLabel}:</span>
           <span className="text-silver-300 text-sm italic font-body">{exp.result}</span>
         </div>
       </div>
