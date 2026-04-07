@@ -1,7 +1,5 @@
 import { useReveal } from "@/hooks/useReveal";
 import { useLang } from "@/contexts/LangContext";
-import { ExternalLink } from "lucide-react";
-
 const experiencePT = [
   {
     role: "Analista de Sistemas | Integração & Banking",

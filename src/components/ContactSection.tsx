@@ -7,8 +7,8 @@ export default function ContactSection() {
   const { t, lang } = useLang();
   const ref = useReveal();
   const locationValue = lang === "pt" ? "Belo Horizonte, MG — Brasil" : "Belo Horizonte, MG — Brazil";
-  const portfolioValue = lang === "pt" ? "Este portfolio no GitHub Pages" : "This portfolio on GitHub Pages";
-  const heading = lang === "pt" ? <>Vamos conversar sobre<br /><span className="gradient-text-electric">sistemas, integração e banking.</span></> : <>Let's talk about<br /><span className="gradient-text-electric">systems, integration, and banking.</span></>;
+  const portfolioValue = lang === "pt" ? "Portfolio online" : "Live portfolio";
+  const heading = lang === "pt" ? <>Vamos conversar sobre<br /><span className="gradient-text-electric">sistemas, integração e negócios.</span></> : <>Let's talk about<br /><span className="gradient-text-electric">systems, integration, and business.</span></>;
   const contactButtonLabel = lang === "pt" ? "Enviar mensagem" : "Send message";
 
   const contacts = [

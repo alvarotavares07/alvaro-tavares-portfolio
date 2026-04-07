@@ -12,8 +12,8 @@ export default function Footer() {
 
         <p className="text-silver-600 text-sm font-mono text-center">
           {lang === "pt"
-            ? "Construído com React, TypeScript & Tailwind CSS"
-            : "Built with React, TypeScript & Tailwind CSS"}
+            ? "Business & Systems Analyst Portfolio"
+            : "Business & Systems Analyst Portfolio"}
         </p>
 
         <p className="text-silver-600 text-xs font-mono">

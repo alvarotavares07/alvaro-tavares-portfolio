@@ -13,7 +13,7 @@ const translations: Record<Lang, Record<string, string>> = {
     // Nav
     "nav.about": "Sobre",
     "nav.experience": "Experiência",
-    "nav.skills": "Skills",
+    "nav.skills": "Competências",
     "nav.projects": "Projetos",
     "nav.contact": "Contato",
     "nav.resume": "Currículo",
@@ -65,13 +65,13 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.location": "Localização",
     "contact.linkedin": "LinkedIn",
     "contact.github": "GitHub",
-    "contact.portfolio": "Portfolio",
+    "contact.portfolio": "Site",
   },
   en: {
     // Nav
     "nav.about": "About",
     "nav.experience": "Experience",
-    "nav.skills": "Skills",
+    "nav.skills": "Capabilities",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
     "nav.resume": "Resume",
@@ -123,7 +123,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.location": "Location",
     "contact.linkedin": "LinkedIn",
     "contact.github": "GitHub",
-    "contact.portfolio": "Portfolio",
+    "contact.portfolio": "Website",
   },
 };
 

@@ -1,81 +1,92 @@
-# Álvaro Tavares — Portfolio v2
+# Álvaro Tavares Portfolio
 
-Portfolio profissional de nível sênior. Stack: React 18 + TypeScript + Vite + Tailwind CSS.
+Portfolio bilíngue construído para posicionar Álvaro Tavares como `Business & Systems Analyst` com foco em integração de sistemas, APIs, banking e entrega ponta a ponta em ambientes críticos.
 
-## 🚀 Rodar localmente
+## Objetivo
+
+O projeto não foi pensado como um portfolio genérico de tecnologia. A estrutura, a narrativa e os microtextos foram organizados para comunicar um perfil híbrido que conecta negócio e tecnologia, com ênfase em:
+
+- análise de requisitos e regras de negócio
+- integração entre sistemas e APIs REST
+- banking e operações críticas
+- homologação, produção e sustentação
+- entrega end-to-end
+
+## Stack
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+
+## Rodar localmente
 
 ```bash
 npm install
 npm run dev
-# Abre em http://localhost:3000
 ```
 
-## 📦 Build de produção
+Aplicação disponível em `http://localhost:5173` no servidor padrão do Vite.
+
+## Build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## 🌐 Deploy no GitHub Pages (automático)
+## Estrutura
 
-1. Crie um repositório no GitHub (ex: `alvaro-portfolio`)
-2. Faça push do código para o branch `main`
-3. Vá em **Settings → Pages → Source → GitHub Actions**
-4. O workflow `.github/workflows/deploy.yml` vai rodar e fazer o deploy automaticamente
-5. Seu site estará em: `https://seu-usuario.github.io/nome-do-repositorio/`
-
-### Push inicial
-
-```bash
-git init
-git add .
-git commit -m "feat: portfolio v2 - cinematic dark design"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/SEU_REPO.git
-git push -u origin main
-```
-
-## 🏗 Estrutura
-
-```
+```text
 src/
-├── components/
-│   ├── Navbar.tsx
-│   ├── HeroSection.tsx
-│   ├── AboutSection.tsx
-│   ├── ExperienceSection.tsx
-│   ├── SkillsSection.tsx
-│   ├── ProjectsSection.tsx
-│   ├── ContactSection.tsx
-│   └── Footer.tsx
-├── contexts/
-│   └── LangContext.tsx   # PT/EN i18n
-├── hooks/
-│   └── useReveal.ts      # Scroll animations
-├── App.tsx
-├── main.tsx
-└── index.css             # Design system
+  components/
+    Navbar.tsx
+    HeroSection.tsx
+    AboutSection.tsx
+    ExperienceSection.tsx
+    SkillsSection.tsx
+    ProjectsSection.tsx
+    ContactSection.tsx
+    Footer.tsx
+  contexts/
+    LangContext.tsx
+  data/
+    certifications.ts
+  hooks/
+    useReveal.ts
+  lib/
+    site.ts
+  App.tsx
+  main.tsx
+  index.css
 ```
 
-## ✨ Features
+## Conteúdo e posicionamento
 
-- Design cinematográfico dark com paleta electric green + gold
-- Typewriter effect no Hero
-- Scroll reveal animations em todas as seções
-- Animated counters (stats)
-- Skill bars com animação ao scroll
-- Timeline de experiência profissional completa
-- Troca de idioma PT/EN instantânea
-- Totalmente responsivo (mobile-first)
-- Deploy automático via GitHub Actions → GitHub Pages
-- Performance otimizada com code splitting
+- `Hero`: apresenta o perfil como Business & Systems Analyst, sem abrir a home expondo clientes nominalmente.
+- `About`: reforça o papel de ponte entre negócio, sistemas e produção.
+- `Experience`: destaca integração, impacto operacional, banking e ownership real de entrega.
+- `Skills`: organiza competências por contexto de atuação, evitando abordagem tool-first.
+- `Projects`: apoia o posicionamento com trabalhos aplicados e leitura de produto.
+- `Contact`: fecha a narrativa com foco em sistemas, integração e contexto de negócio.
 
-## 🎨 Design System
+## Diferenciais do projeto
 
-- **Fonte display**: Syne (headings)
-- **Fonte body**: DM Sans
-- **Fonte mono**: JetBrains Mono (tags, labels)
-- **Cor primária**: Electric Green `#4fffb0`
-- **Cor accent**: Gold `#f5c842`
-- **Background**: Deep ink `#050508`
+- narrativa bilíngue PT/EN
+- conteúdo alinhado a recrutamento sênior
+- microcopy revisado para evitar linguagem genérica de template
+- assets servidos com compatibilidade para GitHub Pages
+- navegação simples, responsiva e orientada à leitura do perfil
+
+## Deploy
+
+O projeto é compatível com GitHub Pages e pode ser publicado via `main` usando a configuração de base URL do Vite.
+
+## Manutenção
+
+Ao atualizar o conteúdo, preserve estes princípios:
+
+- priorizar impacto e contexto sobre ferramenta
+- tratar automação como meio, não identidade principal
+- manter consistência entre site, currículo e README
+- evitar buzzwords e linguagem inflada
