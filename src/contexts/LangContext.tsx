@@ -21,7 +21,7 @@ const translations: Record<Lang, Record<string, string>> = {
     // Hero
     "hero.role": "Business & Systems Analyst",
     "hero.tagline": "Conectando negócio e tecnologia para entregar sistemas críticos em produção.",
-    "hero.sub": "Business & Systems Analyst com 6+ anos em ambientes bancários, atuando da definição de requisitos à integração entre sistemas, APIs e sustentação em produção para Santander, Bradesco, Banco Inter e BB Americas.",
+    "hero.sub": "Business & Systems Analyst com 6+ anos em ambientes bancários, atuando da definição de requisitos à integração entre sistemas, APIs e sustentação em produção.",
     "hero.cta": "Ver Experiência",
     "hero.cta2": "Entrar em Contato",
     "hero.available": "Disponível para novos desafios",
@@ -79,7 +79,7 @@ const translations: Record<Lang, Record<string, string>> = {
     // Hero
     "hero.role": "Business & Systems Analyst",
     "hero.tagline": "Bridging business and technology to deliver critical systems in production.",
-    "hero.sub": "Business & Systems Analyst with 6+ years in banking environments, working from requirements definition to systems integration, APIs, and production support for Santander, Bradesco, Banco Inter, and BB Americas.",
+    "hero.sub": "Business & Systems Analyst with 6+ years in banking environments, working from requirements definition to systems integration, APIs, and production support.",
     "hero.cta": "View Experience",
     "hero.cta2": "Get in Touch",
     "hero.available": "Available for new opportunities",
