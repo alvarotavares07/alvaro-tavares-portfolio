@@ -19,17 +19,22 @@ const translations: Record<Lang, Record<string, string>> = {
     "nav.resume": "Currículo",
 
     // Hero
-    "hero.role": "Business & Systems Analyst",
-    "hero.tagline": "Conectando negócio e tecnologia para entregar sistemas críticos em produção.",
-    "hero.sub": "Business & Systems Analyst com 6+ anos em ambientes bancários, atuando da definição de requisitos à integração entre sistemas, APIs e sustentação em produção.",
+    "hero.role": "Analista de Sistemas Sênior | Business Analyst",
+    "hero.tagline": "Analista de Sistemas | Business Analyst | Integração Bancária | APIs REST | Automação de Processos | RPA",
+    "hero.sub": "Trabalho com integração de sistemas e automação bancária há mais de 7 anos. Atualmente atuo no Santander em automações de crédito consignado. Ao longo da carreira passei por Bradesco, Banco Inter e BB Americas em projetos de abertura de contas digitais, merchant services e consignado.",
     "hero.cta": "Ver Experiência",
     "hero.cta2": "Entrar em Contato",
-    "hero.available": "Disponível para novos desafios",
+    "hero.available": "Disponível para oportunidades",
 
     // About
-    "about.title": "Posicionamento",
-    "about.p1": "Atuo na interseção entre negócio, operação e tecnologia. Estruturo requisitos, desenho fluxos, valido cenários com as áreas envolvidas e acompanho a entrega até o sistema estar estável em produção.",
-    "about.p2": "Minha experiência está concentrada em banking e sistemas críticos: integração entre plataformas, APIs REST, documentação funcional e técnica, homologação e acompanhamento pós-go-live. Automação faz parte da caixa de ferramentas, mas meu papel principal é garantir que a solução certa chegue ao ambiente certo com segurança.",
+    "about.title": "Sobre",
+    "about.p1": "Entro em projetos onde a integração não está funcionando, o processo não flui ou a regra de negócio nunca foi documentada direito e ajudo o time a sair do lugar. Faço isso há mais de 7 anos, principalmente em sistemas bancários críticos em ambiente regulado.",
+    "about.p2": "Ao longo da carreira passei por Santander, Bradesco, Banco Inter e BB Americas, atuando em projetos de integração, automação e produtos digitais financeiros como abertura de contas, merchant services e crédito consignado.",
+    "about.p3": "Participei do projeto que levou a taxa de aprovação do crédito consignado de 20% para 70% no Santander, estruturando as integrações de ponta a ponta no S-Works.",
+    "about.p4": "Meu trabalho normalmente começa antes do desenvolvimento: levantamento de requisitos, alinhamento com negócio, documentação de regras, validação de protótipos e apoio ao time técnico até a entrada em produção. Faço análise de requisitos junto com as áreas, modelo os fluxos em BPMN e prototipo em Figma quando o processo precisa virar tela.",
+    "about.p5": "Hoje no Santander atuo na migração de uma aplicação Redis em ambiente Java, utilizando Devin AI e GitHub Copilot para mapear breaking changes, antecipar impactos e apoiar as validações técnicas antes da publicação.",
+    "about.p6": "No dia a dia trabalho com APIs REST e Swagger para integrações, S-Works com C# e Regex para automações, Java e Redis em ambiente bancário, SQL Server para validação de regras de negócio, OCR via módulo Atomics para documentos, Jira para backlog, Figma para protótipos e ferramentas de RPA quando o projeto exige automação robótica.",
+    "about.p7": "Não me prendo a um único papel. Dependendo do projeto, atuo como Business Analyst, Product Owner ou analista técnico.",
     "about.stat1": "Anos de experiência",
     "about.stat2": "Bancos atendidos",
     "about.stat3": "Entregas em produção",
@@ -40,11 +45,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "exp.current": "Atual",
 
     // Skills
-    "skills.title": "Competências-Chave",
-    "skills.business": "Negócio & Produto",
-    "skills.integration": "APIs & Integração",
-    "skills.systems": "Sistemas & Automação",
-    "skills.data": "Dados & Ferramentas",
+    "skills.title": "Competências",
+    "skills.business": "Análise & Produto",
+    "skills.integration": "Integração & Arquitetura",
+    "skills.systems": "Automação & Sustentação",
+    "skills.data": "Cloud & Metodologia",
     "skills.certsTitle": "Certificações & Badges",
     "skills.certCategory.ai": "Sistemas, Automação & IA Aplicada",
     "skills.certCategory.analysis": "Análise, Produto & Agile",
@@ -59,13 +64,15 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Contact
     "contact.title": "Contato",
-    "contact.sub": "Disponível para posições e projetos em análise de sistemas, integração de APIs, banking e entrega ponta a ponta em ambientes críticos.",
+    "contact.sub": "Disponível para oportunidades em análise de sistemas, integração bancária, APIs REST e automação. BH presencial/híbrido ou remoto Brasil · CLT.",
     "contact.email": "E-mail",
     "contact.phone": "Telefone",
     "contact.location": "Localização",
     "contact.linkedin": "LinkedIn",
     "contact.github": "GitHub",
     "contact.portfolio": "Site",
+    "contact.availability": "Disponibilidade",
+    "contact.availabilityValue": "BH presencial/híbrido ou remoto Brasil · CLT",
   },
   en: {
     // Nav
@@ -77,17 +84,22 @@ const translations: Record<Lang, Record<string, string>> = {
     "nav.resume": "Resume",
 
     // Hero
-    "hero.role": "Business & Systems Analyst",
-    "hero.tagline": "Bridging business and technology to deliver critical systems in production.",
-    "hero.sub": "Business & Systems Analyst with 6+ years in banking environments, working from requirements definition to systems integration, APIs, and production support.",
+    "hero.role": "Senior Systems Analyst | Business Analyst",
+    "hero.tagline": "Systems Analyst | Business Analyst | Banking Integration | REST APIs | Process Automation | RPA",
+    "hero.sub": "I have worked with systems integration and banking automation for over 7 years. Currently at Santander on payroll-deducted loan automations. Across my career I've worked with Bradesco, Banco Inter, and BB Americas on digital account opening, merchant services, and consignado projects.",
     "hero.cta": "View Experience",
     "hero.cta2": "Get in Touch",
-    "hero.available": "Available for new opportunities",
+    "hero.available": "Available for opportunities",
 
     // About
-    "about.title": "Positioning",
-    "about.p1": "I work where business rules, critical operations, and technology need to align. I structure requirements, design flows, validate scenarios with stakeholders, and stay close to delivery until the system is stable in production.",
-    "about.p2": "My experience is concentrated in banking and critical systems: platform integration, REST APIs, functional and technical documentation, homologation, and post-go-live support. Automation is part of the toolkit, but not the identity. My main role is making sure the right solution reaches production safely.",
+    "about.title": "About",
+    "about.p1": "I step into projects where the integration isn't working, the process doesn't flow, or the business rule was never properly documented — and help the team move forward. I have been doing this for over 7 years, mostly in critical banking systems within regulated environments.",
+    "about.p2": "Across my career I've worked with Santander, Bradesco, Banco Inter, and BB Americas on integration, automation, and digital financial products such as account opening, merchant services, and payroll-deducted loans.",
+    "about.p3": "I took part in the project that raised the payroll-deducted loan approval rate from 20% to 70% at Santander by structuring end-to-end integrations on S-Works.",
+    "about.p4": "My work usually starts before development: requirements gathering, business alignment, rule documentation, prototype validation, and supporting the technical team through production. I do requirements analysis with the business areas, model flows in BPMN, and prototype in Figma when the process needs to become a screen.",
+    "about.p5": "At Santander I currently lead the migration of a Redis application in a Java environment, using Devin AI and GitHub Copilot to map breaking changes, anticipate impacts, and support technical validations before release.",
+    "about.p6": "Day-to-day I work with REST APIs and Swagger for integrations, S-Works with C# and Regex for automations, Java and Redis in banking, SQL Server for business rule validation, OCR via the Atomics module for documents, Jira for backlog, Figma for prototyping, and RPA tools when the project requires robotic automation.",
+    "about.p7": "I don't lock myself into a single role. Depending on the project, I act as a Business Analyst, Product Owner, or technical analyst.",
     "about.stat1": "Years of experience",
     "about.stat2": "Banks served",
     "about.stat3": "Production deliveries",
@@ -98,11 +110,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "exp.current": "Present",
 
     // Skills
-    "skills.title": "Core Capabilities",
-    "skills.business": "Business & Product",
-    "skills.integration": "APIs & Integration",
-    "skills.systems": "Systems & Automation",
-    "skills.data": "Data & Tools",
+    "skills.title": "Capabilities",
+    "skills.business": "Analysis & Product",
+    "skills.integration": "Integration & Architecture",
+    "skills.systems": "Automation & Support",
+    "skills.data": "Cloud & Methodology",
     "skills.certsTitle": "Certifications & Badges",
     "skills.certCategory.ai": "Systems, Automation & Applied AI",
     "skills.certCategory.analysis": "Analysis, Product & Agile",
@@ -117,13 +129,15 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Contact
     "contact.title": "Contact",
-    "contact.sub": "Available for roles and projects in systems analysis, API integration, banking systems, and end-to-end delivery in critical environments.",
+    "contact.sub": "Available for opportunities in systems analysis, banking integration, REST APIs, and automation. Belo Horizonte on-site/hybrid, or remote across Brazil · CLT.",
     "contact.email": "Email",
     "contact.phone": "Phone",
     "contact.location": "Location",
     "contact.linkedin": "LinkedIn",
     "contact.github": "GitHub",
     "contact.portfolio": "Website",
+    "contact.availability": "Availability",
+    "contact.availabilityValue": "Belo Horizonte on-site/hybrid · remote Brazil · CLT",
   },
 };
 

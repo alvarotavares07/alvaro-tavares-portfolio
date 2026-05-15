@@ -36,7 +36,7 @@ function AnimatedNumber({ target, suffix = "" }: { target: number; suffix?: stri
 }
 
 const stats = [
-  { key: "about.stat1", value: 6, suffix: "+" },
+  { key: "about.stat1", value: 7, suffix: "+" },
   { key: "about.stat2", value: 4, suffix: "" },
   { key: "about.stat3", value: 40, suffix: "+" },
   { key: "about.stat4", value: certificationCount, suffix: "" },
@@ -48,24 +48,24 @@ export default function AboutSection() {
   const ref2 = useReveal();
   const pillars = lang === "pt"
     ? [
-        { icon: "📐", title: "Negócio & Sistemas", desc: "Requisitos, regras, fluxos e alinhamento entre áreas para decisões mais claras" },
-        { icon: "🔗", title: "APIs & Integração", desc: "REST, Swagger, webhooks e conexão entre sistemas legados, parceiros e plataformas bancárias" },
-        { icon: "🏦", title: "Banking & Produção", desc: "Atuação em ambientes críticos com homologação, monitoramento e estabilidade operacional" },
-        { icon: "⚙️", title: "Entrega Ponta a Ponta", desc: "Da definição ao go-live com visão funcional, técnica e acompanhamento pós-implantação" },
+        { icon: "📐", title: "Análise & Requisitos", desc: "Levantamento, regras de negócio, BPMN, casos de uso, matriz de rastreabilidade e Figma" },
+        { icon: "🔗", title: "APIs & Integração", desc: "REST, Swagger, sistemas legados, Open Finance, breaking changes e contratos" },
+        { icon: "🏦", title: "Banking & Produção", desc: "Santander, Bradesco, Banco Inter e BB Americas em ambiente regulado" },
+        { icon: "⚙️", title: "Automação & RPA", desc: "S-Works, C#, Regex, OCR/Atomics, UiPath, Automation Anywhere e Devin AI" },
       ]
     : [
-        { icon: "📐", title: "Business & Systems", desc: "Requirements, business rules, flow definition, and alignment across teams" },
-        { icon: "🔗", title: "APIs & Integration", desc: "REST, Swagger, webhooks, and integration across legacy, partner, and banking platforms" },
-        { icon: "🏦", title: "Banking & Production", desc: "Work in critical environments with homologation, monitoring, and operational stability" },
-        { icon: "⚙️", title: "End-to-End Delivery", desc: "From definition to go-live with functional, technical, and post-release ownership" },
+        { icon: "📐", title: "Analysis & Requirements", desc: "Discovery, business rules, BPMN, use cases, traceability matrix, and Figma" },
+        { icon: "🔗", title: "APIs & Integration", desc: "REST, Swagger, legacy systems, Open Finance, breaking changes, and contracts" },
+        { icon: "🏦", title: "Banking & Production", desc: "Santander, Bradesco, Banco Inter, and BB Americas in regulated environments" },
+        { icon: "⚙️", title: "Automation & RPA", desc: "S-Works, C#, Regex, OCR/Atomics, UiPath, Automation Anywhere, and Devin AI" },
       ];
   const badges = lang === "pt"
-    ? ["Requisitos & Regras", "APIs & Integração", "Banking & Produção", "Entrega ponta a ponta"]
-    : ["Requirements & Rules", "APIs & Integration", "Banking & Production", "End-to-end delivery"];
+    ? ["Requisitos & Regras", "APIs & Integração", "Banking & Produção", "Automação & RPA", "Devin AI"]
+    : ["Requirements & Rules", "APIs & Integration", "Banking & Production", "Automation & RPA", "Devin AI"];
   const clientsTitle = lang === "pt" ? "Clientes & Empresas" : "Clients & Companies";
   const heading = lang === "pt"
-    ? <>Da regra de negócio<br />à integração<br /><span className="gradient-text-electric">em produção.</span></>
-    : <>From business rules<br />to integration<br /><span className="gradient-text-electric">in production.</span></>;
+    ? <>Da regra de negócio<br />à integração<br /><span className="gradient-text-electric">em produção bancária.</span></>
+    : <>From business rules<br />to integration<br /><span className="gradient-text-electric">in banking production.</span></>;
 
   return (
     <section id="about" className="py-28 relative overflow-hidden">
@@ -97,11 +97,26 @@ export default function AboutSection() {
               {heading}
             </h2>
 
-            <p className="text-silver-200 text-base leading-relaxed mb-6 font-body">
+            <p className="text-silver-200 text-base leading-relaxed mb-5 font-body">
               {t("about.p1")}
             </p>
-            <p className="text-silver-400 text-base leading-relaxed font-body">
+            <p className="text-silver-300 text-base leading-relaxed mb-5 font-body">
               {t("about.p2")}
+            </p>
+            <p className="text-silver-200 text-base leading-relaxed mb-5 font-body border-l-2 border-electric-400/40 pl-4">
+              {t("about.p3")}
+            </p>
+            <p className="text-silver-400 text-base leading-relaxed mb-5 font-body">
+              {t("about.p4")}
+            </p>
+            <p className="text-silver-400 text-base leading-relaxed mb-5 font-body">
+              {t("about.p5")}
+            </p>
+            <p className="text-silver-400 text-sm leading-relaxed mb-5 font-body">
+              {t("about.p6")}
+            </p>
+            <p className="text-silver-300 text-base leading-relaxed font-body italic">
+              {t("about.p7")}
             </p>
 
             {/* Badges */}

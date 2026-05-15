@@ -89,4 +89,4 @@ Ao atualizar o conteúdo, preserve estes princípios:
 - priorizar impacto e contexto sobre ferramenta
 - tratar automação como meio, não identidade principal
 - manter consistência entre site, currículo e README
-- evitar buzzwords e linguagem inflada
+- evitar buzzwords e linguagem inflada2

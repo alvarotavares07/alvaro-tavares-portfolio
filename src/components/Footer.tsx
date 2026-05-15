@@ -12,8 +12,8 @@ export default function Footer() {
 
         <p className="text-silver-600 text-sm font-mono text-center">
           {lang === "pt"
-            ? "Business & Systems Analyst Portfolio"
-            : "Business & Systems Analyst Portfolio"}
+            ? "Analista de Sistemas Sênior · Business Analyst · Integração Bancária · APIs REST"
+            : "Senior Systems Analyst · Business Analyst · Banking Integration · REST APIs"}
         </p>
 
         <p className="text-silver-600 text-xs font-mono">

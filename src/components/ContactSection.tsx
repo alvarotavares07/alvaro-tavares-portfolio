@@ -1,6 +1,6 @@
 import { useLang } from "@/contexts/LangContext";
 import { useReveal } from "@/hooks/useReveal";
-import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink, ArrowRight, Briefcase } from "lucide-react";
 import { currentSitePath } from "@/lib/site";
 
 export default function ContactSection() {
@@ -8,7 +8,9 @@ export default function ContactSection() {
   const ref = useReveal();
   const locationValue = lang === "pt" ? "Belo Horizonte, MG — Brasil" : "Belo Horizonte, MG — Brazil";
   const portfolioValue = lang === "pt" ? "Portfolio online" : "Live portfolio";
-  const heading = lang === "pt" ? <>Vamos conversar sobre<br /><span className="gradient-text-electric">sistemas, integração e negócios.</span></> : <>Let's talk about<br /><span className="gradient-text-electric">systems, integration, and business.</span></>;
+  const heading = lang === "pt"
+    ? <>Vamos conversar sobre<br /><span className="gradient-text-electric">sistemas, integração bancária e APIs.</span></>
+    : <>Let's talk about<br /><span className="gradient-text-electric">systems, banking integration, and APIs.</span></>;
   const contactButtonLabel = lang === "pt" ? "Enviar mensagem" : "Send message";
 
   const contacts = [
@@ -43,8 +45,8 @@ export default function ContactSection() {
     {
       icon: <Github size={18} />,
       label: "GitHub",
-      value: "github.com/alvarotavares07",
-      href: "https://github.com/alvarotavares07",
+      value: "github.com/Alvaro-Tavares07",
+      href: "https://github.com/Alvaro-Tavares07",
       color: "#ffffff",
     },
     {
@@ -53,6 +55,13 @@ export default function ContactSection() {
       value: portfolioValue,
       href: currentSitePath,
       color: "#f5c842",
+    },
+    {
+      icon: <Briefcase size={18} />,
+      label: t("contact.availability"),
+      value: t("contact.availabilityValue"),
+      href: null,
+      color: "#4fffb0",
     },
   ];
 
@@ -71,6 +80,17 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
+            {/* Available pulse badge */}
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full glass-light border border-electric-400/30">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-electric-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-electric-400" />
+              </span>
+              <span className="text-electric-400 text-xs font-mono tracking-widest uppercase">
+                {lang === "pt" ? "Disponível para oportunidades" : "Available for opportunities"}
+              </span>
+            </div>
+
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               {heading}
             </h2>

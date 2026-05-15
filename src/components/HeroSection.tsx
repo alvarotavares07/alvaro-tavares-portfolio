@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import { useLang } from "@/contexts/LangContext";
-import { ArrowDown, MapPin, Linkedin, Github, Mail } from "lucide-react";
+import { ArrowDown, MapPin, Linkedin, Github, Mail, Award } from "lucide-react";
 import { getAssetPath } from "@/lib/site";
 
 const PROFILE_IMAGE_PATH = getAssetPath("1743375229445.jpeg");
 
 const roles = [
-  "Business & Systems Analyst",
-  "Integração de Sistemas & APIs",
-  "Soluções críticas em produção",
-  "Banking · Negócio + Tecnologia",
+  "Analista de Sistemas Sênior",
+  "Business Analyst · Integração Bancária",
+  "APIs REST · S-Works · Swagger",
+  "Automação de Processos · RPA",
 ];
 
 const rolesEN = [
-  "Business & Systems Analyst",
-  "Systems Integration & APIs",
-  "Critical systems in production",
-  "Banking · Business + Technology",
+  "Senior Systems Analyst",
+  "Business Analyst · Banking Integration",
+  "REST APIs · S-Works · Swagger",
+  "Process Automation · RPA",
 ];
 
 export default function HeroSection() {
@@ -26,8 +26,8 @@ export default function HeroSection() {
   const [isTyping, setIsTyping] = useState(true);
   const locationLabel = lang === "pt" ? "Belo Horizonte, MG — Brasil" : "Belo Horizonte, MG — Brazil";
   const profileBadgeLabel = lang === "pt" ? "Negócio + Tecnologia" : "Business + Technology";
-  const profileRoleLabel = lang === "pt" ? "Integração · APIs · Banking" : "Integration · APIs · Banking";
-  const profileExperienceLabel = lang === "pt" ? "6+ anos em ambientes críticos" : "6+ years in critical environments";
+  const profileRoleLabel = lang === "pt" ? "Banking · APIs · Integração" : "Banking · APIs · Integration";
+  const profileExperienceLabel = lang === "pt" ? "7+ anos em ambientes críticos" : "7+ years in critical environments";
 
   const currentRoles = lang === "pt" ? roles : rolesEN;
 
@@ -69,9 +69,20 @@ export default function HeroSection() {
           <div className="max-w-4xl">
 
             {/* Available badge */}
-            <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full glass-light border border-electric-400/20">
-              <span className="w-2 h-2 rounded-full bg-electric-400 animate-pulse" />
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full glass-light border border-electric-400/20">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-electric-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-electric-400" />
+              </span>
               <span className="text-electric-400 text-xs font-mono tracking-widest uppercase">{t("hero.available")}</span>
+            </div>
+
+            {/* Devin badge highlight */}
+            <div className="inline-flex items-center gap-2 mb-6 ml-2 px-4 py-2 rounded-full glass-light border border-gold-400/30">
+              <Award size={14} className="text-gold-300" />
+              <span className="text-gold-200 text-xs font-mono tracking-wider">
+                Devin Foundations Badge — Santander / Cognition · 2026
+              </span>
             </div>
 
             {/* Location */}
@@ -95,7 +106,7 @@ export default function HeroSection() {
             </div>
 
             {/* Tagline */}
-            <p className="text-2xl md:text-3xl font-display text-white/90 mb-4 leading-snug max-w-2xl">
+            <p className="text-xl md:text-2xl font-display text-white/90 mb-4 leading-snug max-w-3xl">
               {t("hero.tagline")}
             </p>
 
@@ -121,13 +132,13 @@ export default function HeroSection() {
             </div>
 
             {/* Social links */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 flex-wrap">
               <a href="https://www.linkedin.com/in/alvaro-tavaress/" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 text-silver-400 hover:text-white transition-colors group">
                 <Linkedin size={16} className="group-hover:text-electric-400 transition-colors" />
                 <span className="text-sm font-mono">LinkedIn</span>
               </a>
-              <a href="https://github.com/alvarotavares07" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/Alvaro-Tavares07" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 text-silver-400 hover:text-white transition-colors group">
                 <Github size={16} className="group-hover:text-electric-400 transition-colors" />
                 <span className="text-sm font-mono">GitHub</span>
@@ -148,7 +159,7 @@ export default function HeroSection() {
               <div className="relative h-full w-full overflow-hidden rounded-full border border-white/10">
                 <img
                   src={PROFILE_IMAGE_PATH}
-                  alt="Foto de Álvaro Tavares"
+                  alt="Foto de Álvaro Tavares — Analista de Sistemas Sênior, Business Analyst, Integração Bancária e APIs REST"
                   className="h-full w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.16),transparent_30%),linear-gradient(180deg,rgba(5,5,8,0)_50%,rgba(5,5,8,0.08)_72%,rgba(5,5,8,0.58)_100%)]" />
@@ -176,7 +187,7 @@ export default function HeroSection() {
         {/* Floating experience badge */}
         <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden xl:block">
           <div className="glass border border-white/8 rounded-2xl p-6 text-center glow-electric">
-            <div className="text-5xl font-display font-bold gradient-text-electric mb-1">6+</div>
+            <div className="text-5xl font-display font-bold gradient-text-electric mb-1">7+</div>
             <div className="text-xs text-silver-400 font-mono uppercase tracking-wider leading-tight">
               {lang === "pt" ? <>anos em<br />sistemas</> : <>years in<br />systems</>}
             </div>

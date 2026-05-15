@@ -1,7 +1,6 @@
 import { useLang } from "@/contexts/LangContext";
 import { useReveal } from "@/hooks/useReveal";
-import { ExternalLink, Github, Zap, BarChart2, Globe } from "lucide-react";
-import { currentRepoUrl, currentSitePath } from "@/lib/site";
+import { ExternalLink, Github, BarChart2, Globe, Activity, Star } from "lucide-react";
 
 interface Project {
   icon: JSX.Element;
@@ -12,36 +11,50 @@ interface Project {
   github: string;
   link?: string;
   color: string;
+  featured?: boolean;
 }
 
 const projectsPT: Project[] = [
   {
     icon: <Globe size={24} />,
     title: "PropostaSimples",
-    desc: "Produto web criado para simplificar a geração de propostas comerciais com foco em clareza de fluxo, experiência do usuário e publicação em produção.",
-    highlights: ["900+ impressões no LinkedIn", "Validação de uso com público real", "Privacidade local: dados permanecem no navegador"],
-    stack: ["HTML", "CSS", "JS", "Geração de PDF", "CNPJ/CPF/CEP Validation"],
-    github: "https://github.com/alvarotavares07",
+    desc: "Ferramenta open source para geração de propostas comerciais para MEI e freelancers. Em produção.",
+    highlights: [
+      "900+ impressões orgânicas no LinkedIn",
+      "Em produção, validada com público real",
+      "Geração de PDF com privacidade local",
+    ],
+    stack: ["HTML", "CSS", "JS", "Geração de PDF"],
+    github: "https://github.com/Alvaro-Tavares07",
+    link: "https://propostasimples.lovable.app",
     color: "#4fffb0",
+    featured: true,
+  },
+  {
+    icon: <Activity size={24} />,
+    title: "SignalCore",
+    desc: "API para suporte à decisão em trading com 10 fases documentadas e levantamento de requisitos antes do desenvolvimento.",
+    highlights: [
+      "10 fases documentadas com requisitos",
+      "133 testes automatizados",
+      "FastAPI + SQLite + Next.js",
+    ],
+    stack: ["FastAPI", "SQLite", "Next.js", "Python"],
+    github: "https://github.com/Alvaro-Tavares07",
+    color: "#a78bfa",
   },
   {
     icon: <BarChart2 size={24} />,
     title: "Agente de Análise de Ações",
-    desc: "Estudo aplicado de integração com APIs financeiras para consolidar dados, estruturar análises e transformar informações dispersas em relatórios utilizáveis.",
-    highlights: ["Integração com múltiplas fontes de dados", "Consolidação de informações financeiras", "Relatórios automatizados para apoio à decisão"],
-    stack: ["Python", "Streamlit", "APIs Financeiras", "IA Aplicada"],
-    github: "https://github.com/alvarotavares07",
+    desc: "Agente autônomo em Python + Streamlit integrado a APIs financeiras para análise de preços e relatórios com IA.",
+    highlights: [
+      "Integração com APIs financeiras",
+      "Análise de preços e relatórios com IA",
+      "Interface em Streamlit",
+    ],
+    stack: ["Python", "Streamlit", "APIs Financeiras"],
+    github: "https://github.com/Alvaro-Tavares07",
     color: "#f5c842",
-  },
-  {
-    icon: <Zap size={24} />,
-    title: "Portfolio Online",
-    desc: "Website pessoal estruturado como produto digital, com narrativa estratégica, manutenção contínua e publicação em produção no GitHub Pages.",
-    highlights: ["Arquitetura de conteúdo orientada a posicionamento", "Deploy e manutenção contínua", "SEO e performance para descoberta profissional"],
-    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "GitHub Pages"],
-    link: currentSitePath,
-    github: currentRepoUrl,
-    color: "#a78bfa",
   },
 ];
 
@@ -49,30 +62,43 @@ const projectsEN: Project[] = [
   {
     icon: <Globe size={24} />,
     title: "PropostaSimples",
-    desc: "Web product created to simplify commercial proposal generation with a strong focus on flow clarity, user experience, and production readiness.",
-    highlights: ["900+ LinkedIn impressions", "Validated with real users", "Local privacy: data stays in the browser"],
-    stack: ["HTML", "CSS", "JS", "PDF Generation", "CNPJ/CPF/CEP Validation"],
-    github: "https://github.com/alvarotavares07",
+    desc: "Open-source tool for generating commercial proposals for solo founders and freelancers. Live in production.",
+    highlights: [
+      "900+ organic LinkedIn impressions",
+      "Live in production, validated with real users",
+      "PDF generation with local-first privacy",
+    ],
+    stack: ["HTML", "CSS", "JS", "PDF Generation"],
+    github: "https://github.com/Alvaro-Tavares07",
+    link: "https://propostasimples.lovable.app",
     color: "#4fffb0",
+    featured: true,
+  },
+  {
+    icon: <Activity size={24} />,
+    title: "SignalCore",
+    desc: "Decision-support API for trading with 10 documented phases and requirements gathering before development.",
+    highlights: [
+      "10 documented phases with requirements",
+      "133 automated tests",
+      "FastAPI + SQLite + Next.js",
+    ],
+    stack: ["FastAPI", "SQLite", "Next.js", "Python"],
+    github: "https://github.com/Alvaro-Tavares07",
+    color: "#a78bfa",
   },
   {
     icon: <BarChart2 size={24} />,
     title: "Stock Analysis Agent",
-    desc: "Applied integration study using financial APIs to consolidate data, structure analysis, and turn scattered information into decision-ready reports.",
-    highlights: ["Multiple data sources integrated", "Financial information consolidation", "Automated reports for decision support"],
-    stack: ["Python", "Streamlit", "Financial APIs", "Applied AI"],
-    github: "https://github.com/alvarotavares07",
+    desc: "Autonomous agent in Python + Streamlit integrated with financial APIs for price analysis and AI-generated reports.",
+    highlights: [
+      "Financial API integration",
+      "AI-generated reports for price analysis",
+      "Streamlit interface",
+    ],
+    stack: ["Python", "Streamlit", "Financial APIs"],
+    github: "https://github.com/Alvaro-Tavares07",
     color: "#f5c842",
-  },
-  {
-    icon: <Zap size={24} />,
-    title: "Online Portfolio",
-    desc: "Personal website structured as a digital product, with strategic messaging, continuous maintenance, and production publishing through GitHub Pages.",
-    highlights: ["Positioning-driven content architecture", "Continuous deployment and maintenance", "SEO and performance for professional discovery"],
-    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "GitHub Pages"],
-    link: currentSitePath,
-    github: currentRepoUrl,
-    color: "#a78bfa",
   },
 ];
 
@@ -80,7 +106,18 @@ function ProjectCard({ proj }: { proj: Project }) {
   const ref = useReveal();
 
   return (
-    <div ref={ref} className="reveal glass-light border border-white/5 rounded-2xl p-6 md:p-8 card-hover flex flex-col h-full">
+    <div
+      ref={ref}
+      className={`reveal glass-light border rounded-2xl p-6 md:p-8 card-hover flex flex-col h-full relative ${
+        proj.featured ? "border-electric-400/30 shadow-[0_0_30px_rgba(79,255,176,0.08)]" : "border-white/5"
+      }`}
+    >
+      {proj.featured && (
+        <div className="absolute -top-3 left-6 px-3 py-1 rounded-full bg-electric-400 text-ink-950 text-[10px] font-mono uppercase tracking-wider flex items-center gap-1.5">
+          <Star size={10} />
+          Destaque
+        </div>
+      )}
       <div className="flex items-start justify-between mb-6">
         <div className="p-3 rounded-xl" style={{ background: `${proj.color}15`, color: proj.color }}>
           {proj.icon}
